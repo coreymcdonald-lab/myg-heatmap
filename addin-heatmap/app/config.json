@@ -1,5 +1,5 @@
 {
-  "name": "Heat Map",
+  "name": "Heat Map v2",
   "supportEmail": "support@geotab.com",
   "version": "1.0.0",
   "items": [{
@@ -7,15 +7,9 @@
     "url": "heatmap.html",
     "path": "ActivityLink/",
     "menuName": {
-      "en": "Heat Map"
+      "en": "Heat Map v2"
     },
     
     "icon": "images/icon.svg"
-  }],
-  "dev": {
-    "root": "heatmap",
-    "dist": {
-      "host": "https://cdn.jsdelivr.net/gh/Geotab/sdk-addin-samples@master/addin-heatmap/dist/"
-    }
-  }
+  }]
 }
