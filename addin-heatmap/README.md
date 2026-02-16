@@ -10,12 +10,12 @@ Add the configuration below to the to the system setting -> add-ins section of t
   "supportEmail": "support@geotab.com",
   "version": "1.0.0",
   "items": [{
-    "url": "https://coreymcdonald-lab.github.io/myg-heatmap/",
+    "url": "https://coreymcdonald-lab.github.io/myg-heatmap/addin-heatmap/dist/heatmap.html",
     "path": "ActivityLink/",
     "menuName": {
       "en": "Heat Map v2"
     },
-    "icon": "https://coreymcdonald-lab.github.io/myg-heatmap/images/icon.svg"
+    "icon": "https://coreymcdonald-lab.github.io/myg-heatmap/addin-heatmap/dist/images/icon.svg"
   }]
 }
 ```
