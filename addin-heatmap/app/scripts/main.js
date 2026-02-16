@@ -306,7 +306,7 @@ geotab.addin.heatmap = () => {
       zoom: 13
     });
 
-    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap',
       subdomains: ['a', 'b', 'c']
     }).addTo(map);
