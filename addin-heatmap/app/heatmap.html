@@ -8,28 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Heat Map</title>
 
-  <!-- build:css styles/vendor.css -->
-  <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
-  <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/spinner.css">
   <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
-
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
   <script src="bower_components/leaflet/dist/leaflet.js"></script>
   <script src="bower_components/leaflet.heat/dist/leaflet-heat.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
-
-  <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
-  <!-- endbuild -->
-</head>
+  </head>
 
 <body>
   
@@ -54,17 +39,23 @@
           </p>
 
           <label for="visualizeBy">Visualize by:</label>
-          <input type="radio" id="visualizeByLocationHistory" name="visualizeBy" value="locationHistory" checked> Location History
-          <input type="radio" id="visualizeByExceptionHistory" name="visualizeBy" value="exceptionHistory"> Exception History
+          <div style="margin-bottom: 10px;">
+            <input type="radio" id="visualizeByLocationHistory" name="visualizeBy" value="locationHistory" checked> Location History
+            <br>
+            <input type="radio" id="visualizeByExceptionHistory" name="visualizeBy" value="exceptionHistory"> Exception History
+          </div>
 
           <label for="exceptionTypes">Rule:</label>
-          <select id="exceptionTypes" class="checkmateFormEditField" ng-mousedown="selectType($event)" disabled>
+          <select id="exceptionTypes" class="checkmateFormEditField" disabled>
               <option disabled="disabled">Select a rule</option>
           </select>
 
+          <label for="groups">Groups:</label>
+          <select id="groups" class="checkmateFormEditField" multiple="true">
+          </select>
+
           <label for="vehicles">Vehicle(s):</label>
-          <select id="vehicles" class="checkmateFormEditField" multiple="true"
-            ng-mousedown="selectType($event)">
+          <select id="vehicles" class="checkmateFormEditField" multiple="true">
           </select>
 
           <label for="from">From:</label>
@@ -72,8 +63,10 @@
 
           <label for="to">To:</label>
           <input id="to" type="datetime-local" class="checkmateFormEditField" />
+          
           <div style="margin:1em"></div>
           <input type="submit" value="Show Heat Map" id="showHeatMap">
+          
           <div id="error"></div>
           <div id="message"></div>
 
@@ -88,17 +81,16 @@
             <ol>
               <li>Choose to visualize by <i>location history</i> or <i>exception history</i>.</li>
               <li>If visualizing by exception history, select a rule for which to search for exceptions.</li>
+              <li>Filter the vehicle list by selecting <b>Groups</b>.</li>
               <li>Select the vehicle(s) to search on.</li>
               <li>Specify a date/time range.</li>
               <li>Click the <i>Show Heat Map</i> button to update the map.</li>
-              <li>After applying any changes to the MyGeotab Groups Filter, refresh the page to apply the filter to the list of vehicles and repeat the above steps.</li>
             </ol>
             <p>
-              When selecting veicles, use CTRL+Click to select/deselect individual vehicles 
-              or SHIFT+Click to select a range of vehicles.  To select all vehicles in the
+              When selecting items, use CTRL+Click to select/deselect individual items 
+              or SHIFT+Click to select a range. To select all items in the
               list, first select one and then use CTRL+A.
             </p>
-  
           </div>
         </div>
       </div>
