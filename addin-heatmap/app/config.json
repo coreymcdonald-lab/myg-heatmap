@@ -11,5 +11,11 @@
     },
     
     "icon": "https://coreymcdonald-lab.github.io/myg-heatmap/addin-heatmap/app/images/icon.svg"
-  }]
+  }],
+    "dev": {
+    "root": "heatmap",
+    "dist": {
+      "host": "https://coreymcdonald-lab.github.io/myg-heatmap//addin-heatmap/dist/"
+    }
+  }
 }
