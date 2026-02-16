@@ -6,16 +6,16 @@ Add the configuration below to the to the system setting -> add-ins section of t
 
 ```json
 {
-  "name": "Heat Map",
+  "name": "Heat Map v2",
   "supportEmail": "support@geotab.com",
   "version": "1.0.0",
   "items": [{
-    "url": "https://cdn.jsdelivr.net/gh/Geotab/sdk-addin-samples@master/addin-heatmap/dist/heatmap.html",
+    "url": "https://coreymcdonald-lab.github.io/myg-heatmap/",
     "path": "ActivityLink/",
     "menuName": {
-      "en": "Heat Map"
+      "en": "Heat Map v2"
     },
-    "icon": "https://cdn.jsdelivr.net/gh/Geotab/sdk-addin-samples@master/addin-heatmap/dist/images/icon.svg"
+    "icon": "https://coreymcdonald-lab.github.io/myg-heatmap/images/icon.svg"
   }]
 }
 ```
