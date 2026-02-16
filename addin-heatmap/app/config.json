@@ -4,12 +4,12 @@
   "version": "1.0.0",
   "items": [{
     
-    "url": "https://coreymcdonald-lab.github.io/myg-heatmap/heatmap.html",
+    "url": "https://coreymcdonald-lab.github.io/myg-heatmap/addin-heatmap/app/heatmap.html",
     "path": "ActivityLink/",
     "menuName": {
       "en": "Heat Map v2"
     },
     
-    "icon": "https://coreymcdonald-lab.github.io/myg-heatmap/images/icon.svg"
+    "icon": "https://coreymcdonald-lab.github.io/myg-heatmap/addin-heatmap/app/images/icon.svg"
   }]
 }
